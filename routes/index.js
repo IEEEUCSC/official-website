@@ -14,7 +14,12 @@ router.get('/contact',function (req, res,next) {
 
 //get officebearers page
 router.get('/official',function (req, res,next) {
-    res.render('official',{title:'Contact'});
+    res.render('official',{title:'Office Bearers'});
+});
+
+//get wie page
+router.get('/wie',function (req, res,next) {
+    res.render('wie',{title:'WIE Details'});
 });
 
 module.exports = router;
