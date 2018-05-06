@@ -9,11 +9,13 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 
+
 var app = express();
 
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'main', extname: '.hbs'}));
 app.set('view engine', '.hbs');
+
 
 app.use(logger('dev'));
 app.use(express.json());

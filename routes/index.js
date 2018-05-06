@@ -10,4 +10,11 @@ router.get('/', function(req, res, next) {
 router.get('/contact',function (req, res,next) {
     res.render('contact',{title:'Contact'});
 });
+
+
+//get officebearers page
+router.get('/official',function (req, res,next) {
+    res.render('official',{title:'Contact'});
+});
+
 module.exports = router;

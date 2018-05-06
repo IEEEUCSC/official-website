@@ -16,23 +16,73 @@ body {
   z-index: 999;
 }
 
+.navbar-collapse{
+  position: relative;
+  left:40%;
 
-.navbar .navbar-collapse.in {
-  overflow: visible;
+
 
 }
 
 .logo{
   height="90"
 }
-#myCarousel{
-  padding: 5px 0px 0px 0px ;
+.carousel {
+  height: 100%;
+  width: 100%;
+position: center;}
+.carousel .carousel-inner {
+  height: 100%; }
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 100%; }
 
-}
 
 a {
   color: #00B7FF;
 }
 .nav-wrapper {
+
+}
+
+.carousel-fade .item {
+  height: 100px;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+#main-content{
+  position: center;
+  margin:0 auto;
+  text-align: center;
+  padding: 50px 50px 50px 50px;
+  text-align: justify;
+
+}
+body{
+    background: rgba(105, 106, 113, 0.13);
+}
+
+#welcome-message{
+  font-size: 18px;
+}
+
+.UCSC-IEE{
+  position: center;
+  margin:0 auto;
+  padding: 80px 50px 50px 50px;
+
+}
+
+#boardimag{
+  position: center;
+background-color: #fafafa;
+}
+
+p{
 
 }
