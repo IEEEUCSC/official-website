@@ -21,6 +21,7 @@ body {
   left:40%;
 
 
+
 }
 
 .logo{
@@ -60,6 +61,10 @@ a {
   text-align: center;
   padding: 50px 50px 50px 50px;
   text-align: justify;
+
+}
+body{
+    background: rgba(105, 106, 113, 0.13);
 }
 
 #welcome-message{
@@ -71,6 +76,11 @@ a {
   margin:0 auto;
   padding: 80px 50px 50px 50px;
 
+}
+
+#boardimag{
+  position: center;
+background-color: #fafafa;
 }
 
 p{
