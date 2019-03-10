@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+  url: /
+- name: News
+  link: /news
+  url: /news.html
+- name: Team
+  link: /team
+  url: /team.html
+- name: Contact Us
+  link: /contact
+  url: /contact.html

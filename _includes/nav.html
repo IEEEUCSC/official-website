@@ -1,0 +1,15 @@
+<div class="mdc-top-app-bar__row">
+  <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+    <a href="#">
+      <img class="ieee-logo" src="/assets/images/UCSC.jpg" />
+    </a>
+  </section>
+  <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+    {% for item in site.data.nav %}
+    <a href="{{ item.link }}"
+      class="ieee-nav-item mdc-button {% if page.url == item.url %}mdc-button--outlined{% endif %}">
+      <span class="mdc-button__label">{{ item.name }}</span>
+    </a>
+    {% endfor %}
+  </section>
+</div>
