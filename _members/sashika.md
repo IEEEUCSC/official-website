@@ -1,6 +1,6 @@
 ---
 short_name: sashika
-name: Sashika Navarathne
+name: Sashika
 position: Design Master
 tier: four
 ---

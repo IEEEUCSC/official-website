@@ -1,6 +1,6 @@
 ---
 short_name: udesh
-name: Udesh Kumarasignhe
+name: Udesh
 position: Web Master
 tier: four
 ---

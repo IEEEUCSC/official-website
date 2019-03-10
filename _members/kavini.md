@@ -1,6 +1,6 @@
 ---
 short_name: kavini
-name: Kavini Nanayakara
+name: Kavini
 position: Coordinator
 tier: three
 ---

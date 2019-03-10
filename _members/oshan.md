@@ -1,6 +1,6 @@
 ---
 short_name: oshan
-name: Oshan Madunayake
+name: Oshan
 position: President
 tier: one
 ---

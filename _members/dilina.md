@@ -1,6 +1,6 @@
 ---
 short_name: dilina
-name: Dilina Dehigama
+name: Dilina
 position: Vice President
 tier: two
 ---

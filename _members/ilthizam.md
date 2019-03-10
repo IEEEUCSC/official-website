@@ -1,6 +1,6 @@
 ---
 short_name: ilthizam
-name: Ilthizam Imitiaz
+name: Ilthizam
 position: Coordinator
 tier: three
 ---
