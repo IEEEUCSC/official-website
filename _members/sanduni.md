@@ -1,5 +1,5 @@
 ---
-short_name: Sanduni
+short_name: sanduni
 name: Sanduni
 position: Treasurer
 tier: two
