@@ -15,5 +15,6 @@ deploy:
   email: deploy@travis-ci.org
   name: Deployment Bot
   github-token: $GITHUB_TOKEN
+  skip-cleanup: true
   on:
     branch: gh-pages
