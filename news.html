@@ -1,0 +1,32 @@
+---
+layout: default
+title: News
+---
+
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
+    </div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
+      <h1>Latest News</h1>
+    </div>
+    <div
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
+    </div>
+  </div>
+  {% for post in site.posts %}
+  <div class="mdc-layout-grid__inner">
+    <div
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
+    </div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </div>
+    <div
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
+    </div>
+  </div>
+  {% endfor %}
+</div>
