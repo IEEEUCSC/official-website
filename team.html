@@ -6,93 +6,73 @@ title: Team
 <div class="mdc-layout-grid">
   <div class="mdc-layout-grid__inner">
     <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-10-desktop">
-      <h1>Team</h1>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
+      <h1 class="mdc-typography--headline2 page-headline">Team</h1>
     </div>
     <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
     </div>
   </div>
   <div class="mdc-layout-grid__inner">
     <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-10-desktop">
-      <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
+      <div class="mdc-layout-grid__inner tier">
         {% assign tier_one = site.members | where: 'tier', 'one' %}
         {% for member in tier_one %}
         <div class="mdc-layout-grid__cell">
-          <h2>{{ member.name }}</h2>
-          <h3>{{ member.position }}</h3>
-          <p>{{ member.content | markdownify }}</p>
+          <h2 class="mdc-typography--headline4">{{ member.name }}</h2>
+          <h3 class="mdc-typography--headline6">{{ member.position }}</h3>
+          <p class="mdc-typography--body1">{{ member.content | markdownify }}</p>
         </div>
         {% endfor %}
       </div>
     </div>
     <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
     </div>
   </div>
   <div class="mdc-layout-grid__inner">
     <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-10-desktop">
-      <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
+      <div class="mdc-layout-grid__inner tier">
         {% assign tier_two = site.members | where: 'tier', 'two' %}
         {% for member in tier_two %}
         <div class="mdc-layout-grid__cell">
-          <h2>{{ member.name }}</h2>
-          <h3>{{ member.position }}</h3>
-          <p>{{ member.content | markdownify }}</p>
+          <h2 class="mdc-typography--headline4">{{ member.name }}</h2>
+          <h3 class="mdc-typography--headline6">{{ member.position }}</h3>
+          <p class="mdc-typography--body1">{{ member.content | markdownify }}</p>
         </div>
         {% endfor %}
       </div>
     </div>
     <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
     </div>
   </div>
   <div class="mdc-layout-grid__inner">
     <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
     </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-10-desktop">
-      <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
+      <div class="mdc-layout-grid__inner tier">
         {% assign tier_three = site.members | where: 'tier', 'three' %}
         {% for member in tier_three %}
         <div class="mdc-layout-grid__cell">
-          <h2>{{ member.name }}</h2>
-          <h3>{{ member.position }}</h3>
-          <p>{{ member.content | markdownify }}</p>
+          <h2 class="mdc-typography--headline4">{{ member.name }}</h2>
+          <h3 class="mdc-typography--headline6">{{ member.position }}</h3>
+          <p class="mdc-typography--body1">{{ member.content | markdownify }}</p>
         </div>
         {% endfor %}
       </div>
     </div>
     <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
-    </div>
-  </div>
-  <div class="mdc-layout-grid__inner">
-    <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
-    </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-10-desktop">
-      <div class="mdc-layout-grid__inner">
-        {% assign tier_four = site.members | where: 'tier', 'four' %}
-        {% for member in tier_four %}
-        <div class="mdc-layout-grid__cell">
-          <h2>{{ member.name }}</h2>
-          <h3>{{ member.position }}</h3>
-          <p>{{ member.content | markdownify }}</p>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-1-desktop">
+      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
     </div>
   </div>
 </div>
