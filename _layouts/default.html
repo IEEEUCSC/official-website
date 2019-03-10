@@ -3,11 +3,26 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <title>{{ site.title }} | {{ page.title }}</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css ">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body>
-  {{ content }}
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+    {% include nav.html %}
+  </header>
+
+  <main class="mdc-top-app-bar--fixed-adjust">
+    {{ content }}
+  </main>
+
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script>
+    const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+    const topAppBar = new MDCTopAppBar(topAppBarElement);
+  </script>
 </body>
 
 </html>
