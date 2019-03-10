@@ -1,0 +1,19 @@
+language: ruby
+cache: bundler
+before_install:
+    - gem install bundler:2.0.1
+branches:
+  only:
+  - gh-pages
+script:
+  - JEKYLL_ENV=production bundle exec jekyll build --destination site
+deploy:
+  provider: pages
+  local-dir: ./site
+  target-branch: gh-pages
+  keep-history: true
+  email: deploy@travis-ci.org
+  name: Deployment Bot
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: gh-pages
