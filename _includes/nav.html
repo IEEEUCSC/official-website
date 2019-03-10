@@ -1,10 +1,27 @@
+<aside id="nav-drawer" class="mdc-drawer mdc-drawer--modal">
+  <div class="mdc-drawer__content">
+    <nav class="mdc-list">
+      {% for item in site.data.nav %}
+      <a class="mdc-list-item {% if page.url == item.url %}mdc-list-item--activated{% endif %}" href="{{ item.link }}"
+        aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">{{ item.name }}</i> -->
+        <span class="mdc-list-item__text">{{ item.name }}</span>
+      </a>
+      {% endfor %}
+    </nav>
+  </div>
+</aside>
+
+<div class="mdc-drawer-scrim"></div>
+
 <div class="mdc-top-app-bar__row">
   <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon nav-menu-icon" onclick="navMenuClicked()">menu</a>
     <a href="#">
       <img class="ieee-logo" src="/assets/images/UCSC.jpg" />
     </a>
   </section>
-  <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+  <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end nav-menu">
     {% for item in site.data.nav %}
     <a href="{{ item.link }}"
       class="ieee-nav-item mdc-button {% if page.url == item.url %}mdc-button--outlined{% endif %}">

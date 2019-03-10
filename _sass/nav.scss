@@ -12,3 +12,17 @@
 .ieee-nav-item {
   margin-right: 8px;
 }
+
+.nav-menu-icon {
+  color: #000 !important;
+  @media screen and (min-width: $break-desktop) {
+    display: none;
+  }
+}
+
+.nav-menu {
+  visibility: hidden;
+  @media screen and (min-width: $break-desktop) {
+    visibility: visible;
+  }
+}
