@@ -4,7 +4,6 @@ title:  "IEEEXtreme 11.0"
 date:   2019-03-01 10:30:00 +0530
 author: UdeshUK
 ---
-IEEEXtreme 11.0 is a prestigious coding challenge hosted by IEEE to bring in talented coders from all around the world.
 
 IEEEXtreme 11.0 is a prestigious coding challenge hosted by IEEE to bring in talented coders from all around the world into an arena of problem solving and algorithmic wizardry for a period of 24 hours.
 
