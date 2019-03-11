@@ -4,7 +4,7 @@ before_install:
     - gem install bundler:2.0.1
 branches:
   only:
-  - gh-pages
+  - master
 script:
   - JEKYLL_ENV=production bundle exec jekyll build --destination site
 deploy:
@@ -17,4 +17,4 @@ deploy:
   github-token: $GITHUB_TOKEN
   skip-cleanup: true
   on:
-    branch: gh-pages
+    branch: master
