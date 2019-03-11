@@ -1,9 +1,86 @@
----
-layout: default
-title: Home
----
+<!doctype html>
+<html>
 
-<section id="home_section_one" class="home-section">
+<head>
+  <meta charset="utf-8">
+  <title>IEEE Student Branch of UCSC | Home</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css ">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+    <aside id="nav-drawer" class="mdc-drawer mdc-drawer--modal">
+  <div class="mdc-drawer__content">
+    <nav class="mdc-list">
+      
+      <a class="mdc-list-item mdc-list-item--activated" href="/"
+        aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">Home</i> -->
+        <span class="mdc-list-item__text">Home</span>
+      </a>
+      
+      <a class="mdc-list-item " href="/news.html"
+        aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">News</i> -->
+        <span class="mdc-list-item__text">News</span>
+      </a>
+      
+      <a class="mdc-list-item " href="/team.html"
+        aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">Team</i> -->
+        <span class="mdc-list-item__text">Team</span>
+      </a>
+      
+      <a class="mdc-list-item " href="/contact.html"
+        aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">Contact Us</i> -->
+        <span class="mdc-list-item__text">Contact Us</span>
+      </a>
+      
+    </nav>
+  </div>
+</aside>
+
+<div class="mdc-drawer-scrim"></div>
+
+<div class="mdc-top-app-bar__row">
+  <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon nav-menu-icon" onclick="navMenuClicked()">menu</a>
+    <a href="#">
+      <img class="ieee-logo" src="/assets/images/UCSC.jpg" />
+    </a>
+  </section>
+  <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end nav-menu">
+    
+    <a href="/"
+      class="ieee-nav-item mdc-button mdc-button--outlined">
+      <span class="mdc-button__label">Home</span>
+    </a>
+    
+    <a href="/news.html"
+      class="ieee-nav-item mdc-button ">
+      <span class="mdc-button__label">News</span>
+    </a>
+    
+    <a href="/team.html"
+      class="ieee-nav-item mdc-button ">
+      <span class="mdc-button__label">Team</span>
+    </a>
+    
+    <a href="/contact.html"
+      class="ieee-nav-item mdc-button ">
+      <span class="mdc-button__label">Contact Us</span>
+    </a>
+    
+  </section>
+</div>
+  </header>
+
+  <main class="mdc-top-app-bar--fixed-adjust">
+    <section id="home_section_one" class="home-section">
 
 </section>
 <section id="home_section_two" class="home-section">
@@ -15,3 +92,19 @@ title: Home
 <section id="home_section_two" class="home-section">
 
 </section>
+  </main>
+
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script>
+    const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+    const topAppBar = new mdc.topappbar.MDCTopAppBar(topAppBarElement);
+
+    function navMenuClicked() {
+      const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+
+      drawer.open = true;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,9 +1,86 @@
----
-layout: default
-title: Team
----
+<!doctype html>
+<html>
 
-<div class="mdc-layout-grid">
+<head>
+  <meta charset="utf-8">
+  <title>IEEE Student Branch of UCSC | Team</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css ">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+  <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+    <aside id="nav-drawer" class="mdc-drawer mdc-drawer--modal">
+  <div class="mdc-drawer__content">
+    <nav class="mdc-list">
+      
+      <a class="mdc-list-item " href="/"
+        aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">Home</i> -->
+        <span class="mdc-list-item__text">Home</span>
+      </a>
+      
+      <a class="mdc-list-item " href="/news.html"
+        aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">News</i> -->
+        <span class="mdc-list-item__text">News</span>
+      </a>
+      
+      <a class="mdc-list-item mdc-list-item--activated" href="/team.html"
+        aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">Team</i> -->
+        <span class="mdc-list-item__text">Team</span>
+      </a>
+      
+      <a class="mdc-list-item " href="/contact.html"
+        aria-selected="true">
+        <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">Contact Us</i> -->
+        <span class="mdc-list-item__text">Contact Us</span>
+      </a>
+      
+    </nav>
+  </div>
+</aside>
+
+<div class="mdc-drawer-scrim"></div>
+
+<div class="mdc-top-app-bar__row">
+  <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon nav-menu-icon" onclick="navMenuClicked()">menu</a>
+    <a href="#">
+      <img class="ieee-logo" src="/assets/images/UCSC.jpg" />
+    </a>
+  </section>
+  <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end nav-menu">
+    
+    <a href="/"
+      class="ieee-nav-item mdc-button ">
+      <span class="mdc-button__label">Home</span>
+    </a>
+    
+    <a href="/news.html"
+      class="ieee-nav-item mdc-button ">
+      <span class="mdc-button__label">News</span>
+    </a>
+    
+    <a href="/team.html"
+      class="ieee-nav-item mdc-button mdc-button--outlined">
+      <span class="mdc-button__label">Team</span>
+    </a>
+    
+    <a href="/contact.html"
+      class="ieee-nav-item mdc-button ">
+      <span class="mdc-button__label">Contact Us</span>
+    </a>
+    
+  </section>
+</div>
+  </header>
+
+  <main class="mdc-top-app-bar--fixed-adjust">
+    <div class="mdc-layout-grid">
   <div class="mdc-layout-grid__inner">
     <div
       class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
@@ -21,15 +98,16 @@ title: Team
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
       <div class="mdc-layout-grid__inner tier">
-        {% assign tier_one = site.members | where: 'tier', 'one' %}
-        {% for member in tier_one %}
+        
+        
         <div class="mdc-layout-grid__cell member-cell">
-          <img class="member-image" src="assets/images/{{member.short_name}}.jpg">
-          <h2 class="mdc-typography--headline4">{{ member.name }}</h2>
-          <h3 class="mdc-typography--headline6">{{ member.position }}</h3>
-          <p class="mdc-typography--body1">{{ member.content | markdownify }}</p>
+          <img class="member-image" src="assets/images/oshan.jpg">
+          <h2 class="mdc-typography--headline4">Oshan</h2>
+          <h3 class="mdc-typography--headline6">President</h3>
+          <p class="mdc-typography--body1"><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
         </div>
-        {% endfor %}
+        
       </div>
     </div>
     <div
@@ -42,15 +120,32 @@ title: Team
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
       <div class="mdc-layout-grid__inner tier">
-        {% assign tier_two = site.members | where: 'tier', 'two' %}
-        {% for member in tier_two %}
+        
+        
         <div class="mdc-layout-grid__cell member-cell">
-          <img class="member-image" src="assets/images/{{member.short_name}}.jpg">
-          <h2 class="mdc-typography--headline4">{{ member.name }}</h2>
-          <h3 class="mdc-typography--headline6">{{ member.position }}</h3>
-          <p class="mdc-typography--body1">{{ member.content | markdownify }}</p>
+          <img class="member-image" src="assets/images/dilina.jpg">
+          <h2 class="mdc-typography--headline4">Dilina</h2>
+          <h3 class="mdc-typography--headline6">Vice President</h3>
+          <p class="mdc-typography--body1"><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
         </div>
-        {% endfor %}
+        
+        <div class="mdc-layout-grid__cell member-cell">
+          <img class="member-image" src="assets/images/sanduni.jpg">
+          <h2 class="mdc-typography--headline4">Sanduni</h2>
+          <h3 class="mdc-typography--headline6">Treasurer</h3>
+          <p class="mdc-typography--body1"><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
+        </div>
+        
+        <div class="mdc-layout-grid__cell member-cell">
+          <img class="member-image" src="assets/images/yasara.jpg">
+          <h2 class="mdc-typography--headline4">Yasara</h2>
+          <h3 class="mdc-typography--headline6">Secretary</h3>
+          <p class="mdc-typography--body1"><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
+        </div>
+        
       </div>
     </div>
     <div
@@ -63,15 +158,48 @@ title: Team
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
       <div class="mdc-layout-grid__inner tier">
-        {% assign tier_three = site.members | where: 'tier', 'three' %}
-        {% for member in tier_three %}
+        
+        
         <div class="mdc-layout-grid__cell member-cell">
-          <img class="member-image" src="assets/images/{{member.short_name}}.jpg">
-          <h2 class="mdc-typography--headline4">{{ member.name }}</h2>
-          <h3 class="mdc-typography--headline6">{{ member.position }}</h3>
-          <p class="mdc-typography--body1">{{ member.content | markdownify }}</p>
+          <img class="member-image" src="assets/images/ilthizam.jpg">
+          <h2 class="mdc-typography--headline4">Ilthizam</h2>
+          <h3 class="mdc-typography--headline6">Coordinator</h3>
+          <p class="mdc-typography--body1"><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
         </div>
-        {% endfor %}
+        
+        <div class="mdc-layout-grid__cell member-cell">
+          <img class="member-image" src="assets/images/kavini.jpg">
+          <h2 class="mdc-typography--headline4">Kavini</h2>
+          <h3 class="mdc-typography--headline6">Coordinator</h3>
+          <p class="mdc-typography--body1"><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
+        </div>
+        
+        <div class="mdc-layout-grid__cell member-cell">
+          <img class="member-image" src="assets/images/sashika.jpg">
+          <h2 class="mdc-typography--headline4">Sashika</h2>
+          <h3 class="mdc-typography--headline6">Design Master</h3>
+          <p class="mdc-typography--body1"><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
+        </div>
+        
+        <div class="mdc-layout-grid__cell member-cell">
+          <img class="member-image" src="assets/images/thusara.jpg">
+          <h2 class="mdc-typography--headline4">Thusara</h2>
+          <h3 class="mdc-typography--headline6">Coordinator</h3>
+          <p class="mdc-typography--body1"><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
+        </div>
+        
+        <div class="mdc-layout-grid__cell member-cell">
+          <img class="member-image" src="assets/images/udesh.jpg">
+          <h2 class="mdc-typography--headline4">Udesh</h2>
+          <h3 class="mdc-typography--headline6">Web Master</h3>
+          <p class="mdc-typography--body1"><p>Jill is an avid fruit grower based in the south of France.</p>
+</p>
+        </div>
+        
       </div>
     </div>
     <div
@@ -79,3 +207,19 @@ title: Team
     </div>
   </div>
 </div>
+  </main>
+
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script>
+    const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+    const topAppBar = new mdc.topappbar.MDCTopAppBar(topAppBarElement);
+
+    function navMenuClicked() {
+      const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+
+      drawer.open = true;
+    }
+  </script>
+</body>
+
+</html>
