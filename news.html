@@ -21,7 +21,7 @@ title: News
       class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
     </div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
-      <h2 class="mdc-typography--headline4 hvr-sweep-to-top"><a class="news-item-header" href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h2 class="mdc-typography--headline4 hvr-sweep-to-top"><a class="news-item-header" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <h4 class="mdc-typography--subtitle1">{{ post.date | date_to_string }}</h4>
       <p class="mdc-typography--body1">{{ post.excerpt }}</p>
     </div>
