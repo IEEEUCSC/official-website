@@ -2,11 +2,11 @@
   link: /
   url: /
 - name: News
-  link: /news
+  link: /news.html
   url: /news.html
 - name: Team
-  link: /team
+  link: /team.html
   url: /team.html
 - name: Contact Us
-  link: /contact
+  link: /contact.html
   url: /contact.html
