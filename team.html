@@ -24,7 +24,7 @@ title: Team
         {% assign tier_one = site.members | where: 'tier', 'one' %}
         {% for member in tier_one %}
         <div class="mdc-layout-grid__cell member-cell">
-          <img class="member-image" src="assets/images/{{member.short_name}}.jpg">
+          <img class="member-image" src="{{ site.baseurl }}/assets/images/{{member.short_name}}.jpg">
           <h2 class="mdc-typography--headline4">{{ member.name }}</h2>
           <h3 class="mdc-typography--headline6">{{ member.position }}</h3>
           <p class="mdc-typography--body1">{{ member.content | markdownify }}</p>
@@ -45,7 +45,7 @@ title: Team
         {% assign tier_two = site.members | where: 'tier', 'two' %}
         {% for member in tier_two %}
         <div class="mdc-layout-grid__cell member-cell">
-          <img class="member-image" src="assets/images/{{member.short_name}}.jpg">
+          <img class="member-image" src="{{ site.baseurl }}/assets/images/{{member.short_name}}.jpg">
           <h2 class="mdc-typography--headline4">{{ member.name }}</h2>
           <h3 class="mdc-typography--headline6">{{ member.position }}</h3>
           <p class="mdc-typography--body1">{{ member.content | markdownify }}</p>
@@ -66,7 +66,7 @@ title: Team
         {% assign tier_three = site.members | where: 'tier', 'three' %}
         {% for member in tier_three %}
         <div class="mdc-layout-grid__cell member-cell">
-          <img class="member-image" src="assets/images/{{member.short_name}}.jpg">
+          <img class="member-image" src="{{ site.baseurl }}/assets/images/{{member.short_name}}.jpg">
           <h2 class="mdc-typography--headline4">{{ member.name }}</h2>
           <h3 class="mdc-typography--headline6">{{ member.position }}</h3>
           <p class="mdc-typography--body1">{{ member.content | markdownify }}</p>
