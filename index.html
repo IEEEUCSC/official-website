@@ -7,5 +7,19 @@ title: Home
 
 </section>
 <section id="home_section_two" class="home-section">
+  {% assign latest = site.posts | where: 'isLatest', 'true' %}
+  {% for post in latest limit: 1 %}
+  <div class="latest" data-tilt>
+    <img src="{{ site.baseurl }}/assets/images/content/{{ post.image }}" />
+    <div class="latest-content">
+      <h1 class="mdc-typography--headline2 latest-title">{{ post.title }}</h1>
+      <hr>
+      <div class="latest-des">{{ post.excerpt }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<section id="home_section_three" class="home-section">
 
 </section>
