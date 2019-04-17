@@ -15,6 +15,7 @@ a {
   color: #046693;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-size: 8rem;
   @media screen and (min-width: $break-tablet) {
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -85,4 +86,12 @@ footer {
 
 .footer-des {
   color: gray;
+}
+
+.font-mon {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 80rem;
 }
