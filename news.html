@@ -3,31 +3,16 @@ layout: default
 title: News
 ---
 
-<div class="mdc-layout-grid">
-  <div class="mdc-layout-grid__inner">
-    <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
-    </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
-      <h1 class="mdc-typography--headline2 page-headline">News</h1>
-    </div>
-    <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
-    </div>
+<div class="container">
+  <div class="row">
+    <h1 class="page-headline font-mon">News</h1>
   </div>
   {% for post in site.posts %}
-  <div class="mdc-layout-grid__inner news-item">
-    <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
-    </div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-tablet mdc-layout-grid__cell--span-8-desktop">
-      <h2 class="mdc-typography--headline4 hvr-sweep-to-top"><a class="news-item-header" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <h4 class="mdc-typography--subtitle1">{{ post.date | date_to_string }}</h4>
-      <p class="mdc-typography--body1">{{ post.excerpt }}</p>
-    </div>
-    <div
-      class="mdc-layout-grid__cell--span-0 mdc-layout-grid__cell--span-0-tablet mdc-layout-grid__cell--span-2-desktop">
-    </div>
+  <div class="row news-item">
+    <h2 class="mdc-typography--headline4 hvr-sweep-to-top"><a class="news-item-header"
+        href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <h4 class="mdc-typography--subtitle1">{{ post.date | date_to_string }}</h4>
+    <p class="mdc-typography--body1">{{ post.excerpt }}</p>
   </div>
   {% endfor %}
 </div>
