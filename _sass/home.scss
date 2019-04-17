@@ -2,58 +2,100 @@
   overflow: hidden;
 }
 
+/* Intro */
 #home_section_one {
-  height: 720px;
+  height: 840px;
   background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
 }
 
+.intro-text {
+  margin-top: 8rem;
+}
+
+.intro-head {
+  font-size: 8rem;
+}
+
+.intro-sub {
+  font-size: 5rem;
+  color: $primary-color;
+}
+
+.intro-circle-one {
+  position: absolute;
+  top: 12rem;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background-color: #000000f2;
+  border-radius: 50%;
+}
+
+.intro-square-one {
+  position: absolute;
+  bottom: 12rem;
+  right: 16rem;
+  width: 200px;
+  height: 200px;
+  transform: translate3d(0px, 0px, 0px) rotate(45deg);
+  background-color: $primary-color;
+  border-radius: 50%;
+}
+
+.intro-square-two {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 6rem;
+  bottom: 12rem;
+  transform: rotate(45deg);
+  background-color: gray;
+  border-radius: 50%;
+}
+
+/* Latest section */
 #home_section_two {
   height: 840px;
 }
 
-#home_section_three {
-  height: 720px;
-  background-image: red;
-}
-
 .latest {
-  transform-style: preserve-3d;
   height: 100%;
   position: relative;
+  width: 72%;
+  margin: 0 auto;
 }
 
-/* Latest section */
 .latest img {
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
-  height: 80%;
-  @media screen and (min-width: $break-tablet) {
-    transform: translate(-50%,-50%);
-  }
-  @media screen and (min-width: $break-desktop) {
-    transform: translate(-70%,-50%);
-  }
+  width: 80%;
 }
 
 .latest-content {
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate3d(-50%,-50%, 50px);
-  width: 420px;
-  background: black;
-  padding: 4rem 2rem;
-  @media screen and (min-width: $break-tablet) {
-    transform: translate3d(-50%,-50%, 50px);
-  }
-  @media screen and (min-width: $break-desktop) {
-    transform: translate3d(30%,-50%, 50px);
-  }
+  right: 0;
+  top: 10rem;
+  width: 320px;
+  height: 320px;
+  background: $primary-color;
+  border-radius: 50%;
+  padding: 6rem ;
+  text-align: center;
+}
+
+.latest-head {
+  position: absolute;
+  top: -0.7rem;
+  left: 2rem;
+  color: white;
+  font-size: 8rem;
 }
 
 .latest-title {
   transform: translateZ(70px);
   color: #ffffff;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -62,6 +104,11 @@
   margin-bottom: 1rem;
 }
 
-.latest-des {
-  color: #ffffffee;
+.latest-des p {
+  color: #ffffff88;
+}
+
+#home_section_three {
+  height: 720px;
+  background-image: red;
 }
