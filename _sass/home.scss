@@ -4,7 +4,7 @@
 
 /* Intro */
 #home_section_one {
-  height: 840px;
+  height: 900px;
   background-color: #ffffff;
   position: relative;
   overflow: hidden;
@@ -154,9 +154,11 @@
      position: relative;
      flex-grow: 1;
      min-width: calc(100% / 3);
-     background-size: cover;
+     background-size: auto 100%;
      background-position: center;
-     
+     -webkit-transition: 0.2s ease-out;
+     transition: 0.2s ease-out;
+
      @media screen and (max-width: 700px) {
         min-width: calc(100% / 2); 
      }
@@ -188,20 +190,28 @@
         width: 50%;
      }
   }
+    
+  .photo:hover {
+    background-size: auto 110%;
+  }
 
   &.square .photo:after {
      padding-top: 100%;
   }
   &.portrait .photo:after {
-     padding-top: 120%;
+     padding-top: 100%;
   }
 }
 
-// body {
-//   background-color: #ece9e2;
-//   overflow-y: scroll;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin: 10px;
-// }
+/* About */
+#home_section_four{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content {
+  margin-top: 3rem;
+}

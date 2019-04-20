@@ -1,19 +1,20 @@
 <div class="container">
   <div class="row">
     <div class="col-3">
-      <img class="footer-logo" src="{{ site.baseurl }}/assets/images/UCSC.jpg" width="100%" />
+      <img class="footer-logo" src="{{ site.baseurl }}/assets/images/UCSC.png" width="100%" />
     </div>
-    <div class="col-1">
-    </div>
-    <div
-      class="col-8 footer-des">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        anim id est laborum.</p>
-      <br>
-      <p>All rights reservered</p>
+    <div class="col-2"></div>
+    <div class="col-7 footer-nav">
+      <div>
+        {% for item in site.data.nav %}
+        <a href="{{ site.baseurl }}{{ item.link }}" class="ieee-nav-item mdc-button">
+          <span class="mdc-button__label">{{ item.name }}</span>
+        </a>
+        {% endfor %}
+      </div>
+      <div class="footer-copyrights">
+        © 2019 - All Right Reservered
+      </div>
     </div>
   </div>
 </div>

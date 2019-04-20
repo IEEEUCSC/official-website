@@ -1,10 +1,19 @@
+
+
 .news-item {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   @media screen and (min-width: $break-tablet) {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   @media screen and (min-width: $break-desktop) {
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
+  }
+
+  .image {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    margin: 1rem 0;
   }
 }
 
