@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Pre IEEEXtreme Programming Competition 1.0"
+date:   2017-02-01 00:00:00 +0530
+image: pre1.jpg
+author: UdeshUK
+---
+
+It was 24th of September 2016. Almost all the students of UCSC gathered in the morning to UCSC premises with enthusiastic minds to participate the Pre IEEEXtreme Programming Competition 1.0. This was a 10 hour in-site coding competition organized by the IEEE student branch for internal students of UCSC with the main objective of  preparing the undergraduates for IEEEXtreme 10.0. Participants competed as groups of 3 members each.
+
+The competition started at 8.00a.m. in the 4th floor of UCSC. Initially,  there were 4 questions from the easy category. There were 3 types of questions, easy, medium and hard. Each of those easy type questions carried 100-150 points. Each hour they released a challenge and these challenges were getting harder gradually. The final challenge was the hardest one which carried 300 points.
+
+All the students attempted the challenges throughout the competition with the same enthusiasm which they had in the morning. Members of the each team got together and solved the problems while discussing and helping each other.
+
+Students were given their lunch. After having their lunch,  they started to attempt the challenges again. Most of the students used python as the language while some others attempt them using different languages such as C++.
+
+At 6.00 p.m. competition was finished and winners were announced. Team ‘void_xtream’ was the team who won the first place and the members of the team were Oshan Mudannayake, Sumedha Dissanayake and Pramodya Abeysinghe. The second place was won by team ‘whileloop_1’ and the third place was won by ‘dire’ team ‘’. Winners received book vouchers as gifts. The competition was wind up by taking the group photo of the participants. This competition had given all the participants the clear idea about IEEEXtreme and this made them familiar to the IEEEXtreme. We hope as the IEEE Student Branch of UCSC succeeded in accomplishing our main objective of Pre Xtreme Programming Competition 1.0.
