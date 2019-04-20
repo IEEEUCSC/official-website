@@ -203,11 +203,15 @@
   }
 }
 
-// body {
-//   background-color: #ece9e2;
-//   overflow-y: scroll;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin: 10px;
-// }
+/* About */
+#home_section_four{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content {
+  margin-top: 3rem;
+}
