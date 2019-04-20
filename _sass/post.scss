@@ -1,12 +1,23 @@
+.post-page-headline {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
 .article-back {
   margin-bottom: 1rem;
 }
 
 .article-subtitle {
   color: gray;
-  margin-bottom: 1rem;
 }
 
 .article-content {
   margin-bottom: 200px;
+}
+
+.article-image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  margin: 2rem 0;
 }
