@@ -15,14 +15,16 @@ a {
   color: #046693;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-size: 8rem;
+  font-size: 4rem;
   @media screen and (min-width: $break-tablet) {
     margin-top: 3rem;
     margin-bottom: 2rem;
+    font-size: 6rem;
   }
   @media screen and (min-width: $break-desktop) {
     margin-top: 5rem;
     margin-bottom: 5rem;
+    font-size: 8rem;
   }
 }
 
