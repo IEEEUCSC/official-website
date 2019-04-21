@@ -16,6 +16,7 @@
 
 .intro-head {
   font-size: 8rem;
+  color: #333447;
 }
 
 .intro-sub {
@@ -100,10 +101,14 @@
 
 .latest-head {
   position: absolute;
-  top: -0.7rem;
   left: 2rem;
   color: white;
-  font-size: 8rem;
+  top: -1.2rem;
+  font-size: 6rem;
+  @media screen and (min-width: $break-desktop) {
+    top: -0.7rem;
+    font-size: 8rem;
+  }
 }
 
 .latest-title {
@@ -126,12 +131,13 @@
 
 #home_section_three {
   margin-top: 8rem;
-  padding: 12rem 0;
+  padding: 8rem 0 12rem 0;
   position: relative;
 }
 
 .gallery-head {
   font-size: 8rem;
+  color: #333447;
   float: right;
   margin-bottom: 6rem;
 }
@@ -224,6 +230,10 @@
   background-color: #ffffff;
   position: relative;
   overflow: hidden;
+}
+
+.about-head {
+  color: #333447;
 }
 
 .about-content {
