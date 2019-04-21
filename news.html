@@ -8,13 +8,13 @@ title: News
     <h1 class="page-headline font-mon">News</h1>
   </div>
   {% for post in site.posts %}
-  <div class="row news-item">
+  <div class="row news-item image-cell">
     <a class="news-item-header" href="{{ site.baseurl }}{{ post.url }}">
       <h2 class="mdc-typography--headline2 hvr-sweep-to-top">{{ post.title }}</h2>
     </a>
     <h4 class="mdc-typography--subtitle1">{{ post.date | date_to_string }}</h4>
     {% if post.image != null %}
-    <a class="image-cell" href="{{ site.baseurl }}{{ post.url }}">
+    <a href="{{ site.baseurl }}{{ post.url }}">
       <img class="image" src="{{ site.baseurl }}/assets/images/content/{{ post.image }}" />
     </a>
     {% endif %}
