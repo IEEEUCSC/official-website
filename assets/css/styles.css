@@ -132,7 +132,8 @@ footer {
   margin-top: 8rem; }
 
 .intro-head {
-  font-size: 8rem; }
+  font-size: 8rem;
+  color: #333447; }
 
 .intro-sub {
   font-size: 5rem;
@@ -208,10 +209,14 @@ footer {
 
 .latest-head {
   position: absolute;
-  top: -0.7rem;
   left: 2rem;
   color: white;
-  font-size: 8rem; }
+  top: -1.2rem;
+  font-size: 6rem; }
+  @media screen and (min-width: 840px) {
+    .latest-head {
+      top: -0.7rem;
+      font-size: 8rem; } }
 
 .latest-title {
   transform: translateZ(70px);
@@ -229,11 +234,12 @@ footer {
 /* Gallery */
 #home_section_three {
   margin-top: 8rem;
-  padding: 12rem 0;
+  padding: 8rem 0 12rem 0;
   position: relative; }
 
 .gallery-head {
   font-size: 8rem;
+  color: #333447;
   float: right;
   margin-bottom: 6rem; }
 
@@ -306,6 +312,9 @@ footer {
   background-color: #ffffff;
   position: relative;
   overflow: hidden; }
+
+.about-head {
+  color: #333447; }
 
 .about-content {
   margin-top: 3rem; }
