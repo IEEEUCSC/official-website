@@ -14,7 +14,7 @@ title: News
     </a>
     <h4 class="mdc-typography--subtitle1">{{ post.date | date_to_string }}</h4>
     {% if post.image != null %}
-    <a href="{{ site.baseurl }}{{ post.url }}">
+    <a class="image-cell" href="{{ site.baseurl }}{{ post.url }}">
       <img class="image" src="{{ site.baseurl }}/assets/images/content/{{ post.image }}" />
     </a>
     {% endif %}

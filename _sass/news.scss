@@ -17,6 +17,23 @@
   }
 }
 
+.image-cell {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+  -webkit-transition: filter 0.5s ease;
+  transition: filter 0.5s ease;
+}
+
+.image-cell:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
 .news-item-header {
   color: inherit;
 }
