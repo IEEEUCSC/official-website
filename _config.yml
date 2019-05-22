@@ -14,15 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: IEEE Student Branch of UCSC
-email: your-email@example.com
+email: ucscieee@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/"
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  IEEE student branch of University of Colombo School of Computing was established
+  in 2011 and has achieved great success during past few years. Student branch has
+  been formed with the participation and contribution of all four batches of University
+  of Colombo School of Computing and it has been organizing many activities to enhance
+  professional development of the students.
+baseurl: ""
+url: "https://ucscieee.com" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+#github_username:  jekyll
 
 # Build settings
 markdown: kramdown
