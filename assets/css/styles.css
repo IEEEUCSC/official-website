@@ -70,8 +70,7 @@ a {
 footer {
   margin-top: 12rem;
   padding: 3rem 0;
-  background-color: #b1b1b1;
-}
+  background-color: #f4f4f4; }
 
 .footer-logo {
   filter: gray;
@@ -97,8 +96,14 @@ footer {
 
 /* Nav */
 .mdc-top-app-bar {
-  background-color: #fffffff0;
+  background-color: #ffffffaa;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 0.8px solid #cccccc;
   color: #000; }
+
+.mdc-button--raised {
+  box-shadow: none !important; }
 
 .ieee-logo {
   height: 42px;
@@ -118,6 +123,18 @@ footer {
   @media screen and (min-width: 840px) {
     .nav-menu {
       visibility: visible; } }
+
+.container {
+  width: 100%; }
+  @media screen and (min-width: 480px) {
+    .container {
+      width: 90%; } }
+
+.mdc-typography--headline1 {
+  font-size: 5.4rem !important; }
+  @media screen and (min-width: 480px) {
+    .mdc-typography--headline1 {
+      font-size: 8rem !important; } }
 
 .home-section {
   overflow: hidden; }
@@ -213,7 +230,8 @@ footer {
   left: 2rem;
   color: white;
   top: -1.2rem;
-  font-size: 6rem; }
+  font-size: 6rem;
+  text-shadow: 2px 2px #00000044; }
   @media screen and (min-width: 840px) {
     .latest-head {
       top: -0.7rem;
@@ -230,7 +248,11 @@ footer {
   margin-bottom: 1rem; }
 
 .latest-des p {
-  color: #ffffff88; }
+  color: #ffffff88;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical; }
 
 /* Gallery */
 #home_section_three {
@@ -310,6 +332,7 @@ footer {
 #home_section_four {
   padding-top: 8rem;
   padding-bottom: 8rem;
+  width: 90%;
   background-color: #ffffff;
   position: relative;
   overflow: hidden; }
@@ -406,7 +429,18 @@ footer {
   color: gray; }
 
 .article-content {
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  text-align: justify; }
+  .article-content img {
+    margin: 2rem 0;
+    width: 100%;
+    height: 320px;
+    object-fit: cover; }
+    @media screen and (min-width: 840px) {
+      .article-content img {
+        margin: 2rem 10%;
+        width: 80%;
+        height: 440px; } }
 
 .article-image {
   width: 100%;
