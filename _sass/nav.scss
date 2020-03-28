@@ -1,7 +1,14 @@
 /* Nav */
 .mdc-top-app-bar {
-  background-color: #fffffff0;
+  background-color: #ffffffaa;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 0.8px solid #cccccc;
   color: #000;
+}
+
+.mdc-button--raised {
+  box-shadow: none !important;
 }
 
 .ieee-logo {

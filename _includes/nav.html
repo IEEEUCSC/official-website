@@ -25,7 +25,7 @@
   <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end nav-menu">
     {% for item in site.data.nav %}
     <a href="{{ site.baseurl }}{{ item.link }}"
-      class="ieee-nav-item mdc-button {% if page.url == item.url %}mdc-button--outlined{% endif %}">
+      class="ieee-nav-item mdc-button {% if page.url == item.url %}mdc-button--raised{% endif %}">
       <span class="mdc-button__label">{{ item.name }}</span>
     </a>
     {% endfor %}

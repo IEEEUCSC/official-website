@@ -1,3 +1,19 @@
+.container {
+  width: 100%;
+
+  @media screen and (min-width: $break-tablet) {
+    width: 90%;
+  }
+}
+
+.mdc-typography--headline1 {
+  font-size: 5.4rem !important;
+
+  @media screen and (min-width: $break-tablet) {
+    font-size: 8rem !important;
+  }
+}
+
 .home-section {
   overflow: hidden;
 }
@@ -105,6 +121,7 @@
   color: white;
   top: -1.2rem;
   font-size: 6rem;
+  text-shadow: 2px 2px #00000044;
   @media screen and (min-width: $break-desktop) {
     top: -0.7rem;
     font-size: 8rem;
@@ -125,6 +142,10 @@
 
 .latest-des p {
   color: #ffffff88;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 /* Gallery */
@@ -227,6 +248,7 @@
 #home_section_four{
   padding-top: 8rem;
   padding-bottom: 8rem;
+  width: 90%;
   background-color: #ffffff;
   position: relative;
   overflow: hidden;
