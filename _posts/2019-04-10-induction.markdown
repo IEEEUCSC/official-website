@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Induction"
+title:  "Induction 2019"
 date:   2019-04-10 10:30:00 +0530
-isLatest: true
+isLatest: false
 image: induction.jpg
 author: UdeshUK
 ---

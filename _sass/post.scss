@@ -13,6 +13,20 @@
 
 .article-content {
   margin-bottom: 200px;
+  text-align: justify;
+
+  img {
+    margin: 2rem 0;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    
+    @media screen and (min-width: $break-desktop) {
+      margin: 2rem 10%;
+      width: 80%;
+      height: 440px;
+    }
+  }
 }
 
 .article-image {
