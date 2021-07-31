@@ -1,8 +1,8 @@
 ---
-short_name: oshan
-name: Oshan
+short_name: Sahan Dissanayaka
+name: Sahan Dissanayaka
 position: President
-email: oshan@gmail.com
+
 tier: one
 ---
 Jill is an avid fruit grower based in the south of France.
